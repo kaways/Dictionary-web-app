@@ -1,6 +1,15 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@font-face {
+  font-family: myFirstFont;
+  src: url(./assets/fonts/Inter/static/Inter_24pt-Regular.ttf);
+}
+
+h1 {
+  font-family: myFirstFont;
+  font-size: 50px;
+}
 
 @layer base {
   :root {
