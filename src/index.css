@@ -1,14 +1,25 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
 @font-face {
-  font-family: myFirstFont;
+  font-family: Inter;
   src: url(./assets/fonts/Inter/static/Inter_24pt-Regular.ttf);
 }
 
+@font-face {
+  font-family: Inconsolata;
+  src: url(./assets/fonts/Inconsolata/static/Inconsolata-Regular.ttf);
+}
+
+@font-face {
+  font-family: Lora;
+  src: url(./assets/fonts/Lora/static/Lora-Regular.ttf);
+}
+
 h1 {
-  font-family: myFirstFont;
-  font-size: 50px;
+  font-size: 64px;
+  font-weight: bold;
 }
 
 @layer base {

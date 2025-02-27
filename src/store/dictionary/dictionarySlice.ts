@@ -3,7 +3,7 @@ import { DictionaryState } from './dictionaryTypes';
 import { fetchWordDefinition } from './dictionaryThunks';
 
 const initialState: DictionaryState = {
-  data: null,
+  data: [],
   loading: false,
   error: null,
 };

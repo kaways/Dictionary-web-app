@@ -7,6 +7,8 @@ export interface WordDefinition {
     }>;
     meanings: Array<{
       partOfSpeech: string;
+      synonyms?: string[];
+      antonyms?: string[];
       definitions: Array<{
         definition: string;
         example?: string;
