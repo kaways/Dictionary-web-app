@@ -1,7 +1,6 @@
 
 
 import { Switch } from "@/components/ui/switch";
-import Mode from '@/assets/images/Mode.png';
 import {
     Select,
     SelectContent,
@@ -9,7 +8,7 @@ import {
     SelectTrigger,
     SelectValue,
 } from "@/components/ui/select";
-import { BookMinus } from 'lucide-react';
+import { BookMinus, Moon } from 'lucide-react';
 
 interface FontSelectorProps {
     selectedFont: string;
@@ -30,11 +29,11 @@ export const DictionaryHeader = ({ onFontChange, selectedFont, theme, onThemeCha
     return (
 
         <div className="flex justify-between mb-8 items-center">
-            <BookMinus className="size-6 shrink-0" />
+            <BookMinus color="#757575" strokeWidth={1} className="size-6 shrink-0" />
 
             <div className="flex gap-4 items-center">
                 <Select onValueChange={handleFontChange} value={selectedFont}>
-                    <SelectTrigger className="w-[180px]">
+                    <SelectTrigger>
                         <SelectValue placeholder="Theme" />
                     </SelectTrigger>
                     <SelectContent>
@@ -44,12 +43,10 @@ export const DictionaryHeader = ({ onFontChange, selectedFont, theme, onThemeCha
                     </SelectContent>
                 </Select>
                 <div>
-                    <Switch id="theme-switch"
-                        checked={theme === "dark"}
-                        onCheckedChange={handleToggle} />
+                    <Switch id="theme-switch" className="dark:bg-[#A445ED]" checked={theme === "dark"} onCheckedChange={handleToggle} />
                 </div>
                 <div>
-                    <img className="size-4 shrink-0" src={Mode} alt="Dictionary Logo" />
+                    <Moon className="size-6 shrink-0 text-[#757575] dark:text-[#A445ED]" />
                 </div>
             </div>
         </div>

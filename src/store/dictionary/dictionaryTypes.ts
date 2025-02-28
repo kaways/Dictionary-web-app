@@ -5,6 +5,7 @@ export interface WordDefinition {
       text: string;
       audio: string;
     }>;
+    sourceUrls?: string[];
     meanings: Array<{
       partOfSpeech: string;
       synonyms?: string[];

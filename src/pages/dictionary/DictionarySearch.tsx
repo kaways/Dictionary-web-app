@@ -19,8 +19,8 @@ export const DictionarySearch = () => {
     const dispatch = useAppDispatch();
 
     const formSchema = z.object({
-        word: z.string().min(2, {
-            message: "word must be at least 2 characters.",
+        word: z.string().min(1, {
+            message: "Whoops, can’t be empty…",
         }),
     })
 
@@ -46,7 +46,7 @@ export const DictionarySearch = () => {
                         <FormItem>
                             <FormControl>
                                 <div className="flex mx-auto relative">
-                                    <Input placeholder="Pesquisar" className="h-12" {...field} />
+                                    <Input placeholder="Search for any word…" className="dark:bg-[#1F1F1F]" {...field} />
                                     <Search color="purple" size={20} className="absolute right-0 mr-4 mt-3" />
                                 </div>
                             </FormControl>

@@ -17,7 +17,7 @@ export const Dictionary = () => {
     }, [theme]);
 
     return (
-        <div style={{ fontFamily: selectedFont }} className="mx-auto max-w-2xl items-center gap-x-4 p-6 text-black dark:text-white">
+        <div style={{ fontFamily: selectedFont }} className="mx-auto items-center gap-x-4 p-6 text-black dark:text-white">
             <DictionaryHeader onFontChange={setSelectedFont} selectedFont={selectedFont} theme={theme} onThemeChange={setTheme} />
             <DictionaryContent />
         </div>

@@ -27,6 +27,7 @@ const dictionarySlice = createSlice({
       )
       .addCase(fetchWordDefinition.rejected, (state, action) => {
         state.loading = false;
+        state.data = [];
         state.error = action.payload as string;
       });
   },
