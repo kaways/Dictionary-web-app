@@ -3,7 +3,7 @@ import { useSelector } from 'react-redux';
 import { RootState } from '@/store/store';
 import { DictionarySearch } from './DictionarySearch';
 import errorFace from '@/assets/images/error-face.png'
-import { CirclePlay } from 'lucide-react';
+import { CirclePlay, SquareArrowOutUpRight } from 'lucide-react';
 
 export const DictionaryContent = () => {
     const { data, error } = useSelector((state: RootState) => state.dictionary);
@@ -76,9 +76,10 @@ export const DictionaryContent = () => {
                     })}
 
                     <div className='w-full h-px bg-[#979797]' />
-                    <small className='flex gap-4'>
+                    <small className='flex gap-3 items-center'>
                         <p className='underline decoration-[#757575]'>Source</p>
                         <a href={sourceUrls?.[0]} target="_blank" className='underline dark:text-white'>{sourceUrls?.[0]}</a>
+                        <SquareArrowOutUpRight className='size-3' color="#757575"/>
                     </small>
                 </div >
             )}
