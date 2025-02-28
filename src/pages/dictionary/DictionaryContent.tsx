@@ -98,7 +98,6 @@ export const DictionaryContent = () => {
             )}
         </>
     );
-
 }
 
 export default DictionaryContent;

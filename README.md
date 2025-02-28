@@ -1,50 +1,30 @@
-# React + TypeScript + Vite
+# Free Dictionary API
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+### 1. Iniciação
 
-Currently, two official plugins are available:
+Manual de montagem de ambiente de desenvolvimento.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Conteúdo
 
-## Expanding the ESLint configuration
+- [Ambiente](#ambiente)
+- [Execução](#execução)
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+### Ambiente
 
-- Configure the top-level `parserOptions` property like this:
+- Enquanto o projeto estiver em ambiente de desenvolvimento os valores abaixo deverão permanecer como foram previamente configurados
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+- **Caso esteja utilizando o Visual Studio Code**
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+  > Indo ao diretório `Projeto`
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+  ## Execução
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+- **Caso esteja utilizando o Visual Studio Code**
+
+1. Clone o projeto para sua máquina local.
+
+2. Abra a pasta do projeto no editor de código.
+
+3. Aceite todas as sugestões de instalação de extensões que aparecerem assim que a pasta do projeto for aberta.
+
+4. Abrir um termina e executar`pnpm i` ou `npm i` e depois `pnpm run dev` ou `npm run dev`
